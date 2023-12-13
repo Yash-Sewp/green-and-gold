@@ -1,0 +1,16 @@
+.navbar {
+  margin-bottom: 40px;
+
+  .navbar-brand {
+    img {
+      width: 140px;
+      height: auto;
+    }
+  }
+
+  .navbar-collapse {
+    @media (min-width: 1024px) {
+      margin-left: 100px;
+    }
+  }
+}
