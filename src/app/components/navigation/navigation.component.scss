@@ -1,5 +1,10 @@
 .navbar {
-  margin-bottom: 40px;
+  z-index: 9;
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+  }
 
   .navbar-brand {
     img {
