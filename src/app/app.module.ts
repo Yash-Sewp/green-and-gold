@@ -13,6 +13,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { VideoBannerComponent } from './components/video-banner/video-banner.component';
+import { ProductTypeComponent } from './components/cards/product-type/product-type.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VideoBannerComponent } from './components/video-banner/video-banner.com
     HomeComponent,
     FooterComponent,
     NavigationComponent,
-    VideoBannerComponent
+    VideoBannerComponent,
+    ProductTypeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>GreenAndGold</title>
+  <title>Green & Gold</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
+  <script>
+    setTimeout(() => {
+      loadVideo();
+    }, 800);
+
+    function loadVideo() {
+      var x = document.getElementById('bg-video').autoplay;
+      document.getElementById('demo').innerHTML = x;
+    }
+
+    window.addEventListener('scroll', function () {
+      var dynamicElement = document.getElementById('navigation');
+      if (window.scrollY > 170) {
+        dynamicElement.classList.add('solid-bg');
+      } else {
+        dynamicElement.classList.remove('solid-bg');
+      }
+    });
+  </script>
 </body>
+
 </html>

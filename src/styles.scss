@@ -3,3 +3,21 @@
 $primary: #098b54;
 $secondary: #dcbb57;
 $darkGreen: #003e21;
+
+.green {
+  color: $primary;
+}
+
+.gold {
+  color: $secondary;
+}
+
+.spacing {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: 1024px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

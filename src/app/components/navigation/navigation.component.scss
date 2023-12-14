@@ -1,15 +1,27 @@
+@import "/src/styles.scss";
+
 .navbar {
   z-index: 9;
 
-  .nav-link {
-    font-size: 18px;
-    font-weight: 500;
+  &.solid-bg {
+    background-color: #fff;
+  }
+
+  .navbar-toggler {
+    border: none;
+    box-shadow: none;
+    color: $primary;
+    font-size: 42px;
   }
 
   .navbar-brand {
     img {
-      width: 140px;
+      width: 105px;
       height: auto;
+
+      @media (min-width: 1024px) {
+        width: 140px;
+      }
     }
   }
 
@@ -17,5 +29,82 @@
     @media (min-width: 1024px) {
       margin-left: 100px;
     }
+  }
+}
+
+.offcanvas {
+  background: rgba($color: #fff, $alpha: 0.7);
+
+  @media (min-width: 1024px) {
+    width: 40%;
+  }
+
+  .offcanvas-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-item {
+    &:hover {
+      .nav-link {
+        color: $primary;
+        transform: scale(1.05);
+        transition: ease 0.2s;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: $darkGreen;
+    margin: 15px 0;
+
+    @media (min-width: 1024px) {
+      font-size: 24px;
+      padding-right: 30px;
+    }
+  }
+
+  .btn-close {
+    background: none;
+    color: $darkGreen;
+    font-size: 32px;
+    box-shadow: none;
+    border: none;
+    margin-top: 23px;
+    margin-right: 2px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+    }
+
+    li {
+      margin-right: 15px;
+    }
+
+    a {
+      color: $darkGreen;
+      font-size: 24px;
+
+      &:hover {
+        color: $primary;
+        transition: ease 0.2s;
+      }
+    }
+  }
+
+  .navbar-nav {
+    text-align: center;
   }
 }
