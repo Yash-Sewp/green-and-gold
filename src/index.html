@@ -13,7 +13,9 @@
   <app-root></app-root>
   <script>
     setTimeout(() => {
-      loadVideo();
+      if (document.getElementById('bg-video')) {
+        loadVideo();
+      }
     }, 800);
 
     function loadVideo() {

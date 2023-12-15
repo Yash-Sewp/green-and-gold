@@ -21,3 +21,95 @@ $darkGreen: #003e21;
     padding-bottom: 60px;
   }
 }
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  border-radius: 0;
+
+  &:focus-visible {
+    background-color: $primary !important;
+  }
+
+  &:active {
+    background-color: $primary !important;
+  }
+
+  &-primary {
+    background-color: $primary;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0;
+      background: #fff;
+      left: 0;
+      bottom: 0;
+      transition: all .3s;
+      opacity: 0.3;
+    }
+
+    &:active {
+      background: $primary;
+    }
+
+    &:hover {
+      background: $primary;
+
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
+  &-secondary {
+    background: transparent;
+    border: solid 2px #000;
+    color: #000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0;
+      background: #fff;
+      left: 0;
+      bottom: 0;
+      transition: all .3s;
+      opacity: 0.3;
+    }
+
+    &:hover {
+      background: transparent;
+      color: #000;
+
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.breadcrumb {
+
+  li {
+    font-weight: 500;
+
+    &.active {
+      font-weight: 400;
+    }
+  }
+
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+}

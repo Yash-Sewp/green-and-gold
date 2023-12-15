@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { VideoBannerComponent } from './components/video-banner/video-banner.component';
 import { ProductTypeComponent } from './components/cards/product-type/product-type.component';
+import { StrainComponent } from './pages/strain/strain.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductTypeComponent } from './components/cards/product-type/product-ty
     FooterComponent,
     NavigationComponent,
     VideoBannerComponent,
-    ProductTypeComponent
+    ProductTypeComponent,
+    StrainComponent
   ],
   imports: [
     BrowserModule,

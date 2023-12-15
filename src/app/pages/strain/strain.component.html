@@ -1,0 +1,55 @@
+<section class="strain">
+  <div class="container">
+    <div class="row">
+      <div class="strain__breadcrumb">
+        <nav aria-label="breadcrumb" class="mt-5">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="['/']">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/']">Strain</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ slug }}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="row spacing">
+      <div class="col-12 col-lg-6">
+        <div class="strain__img">
+          <img src="{{ strainObj.img }}" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="strain__content">
+          <div class="strain__title">
+            <h2>{{ strainObj.strain }}</h2>
+          </div>
+
+          <div class="strain__price d-flex align-items-center justify-content-between mb-4">
+            <span class="title">Price:</span>
+            <span>R0.00</span>
+          </div>
+
+          <div class="strain__level d-flex align-items-center justify-content-between mb-4">
+            <span class="title">Level:</span>
+            <select id="">
+              <option *ngFor="let item of strainObj.level" value="AAA">{{ item }}</option>
+            </select>
+          </div>
+
+          <div class="strain__grams d-flex align-items-center justify-content-between mb-4">
+            <span class="title">Quantity:</span>
+            <select id="">
+              <option value="5g">5g</option>
+              <option value="10g">10g</option>
+              <option value="15g">15g</option>
+            </select>
+          </div>
+
+          <button type="button" class="btn btn-primary">
+            Add to cart
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

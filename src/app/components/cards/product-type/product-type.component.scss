@@ -11,6 +11,8 @@
   align-items: flex-end;
   justify-content: center;
   cursor: pointer;
+  box-shadow: 0 3px 10px #0003;
+  text-decoration: none;
 
   &:hover {
     transition: ease-in-out .3s;

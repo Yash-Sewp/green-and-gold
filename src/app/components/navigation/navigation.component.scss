@@ -5,6 +5,7 @@
 
   &.solid-bg {
     background-color: #fff;
+    box-shadow: 0 3px 10px #0003;
   }
 
   .navbar-toggler {
@@ -33,7 +34,7 @@
 }
 
 .offcanvas {
-  background: rgba($color: #fff, $alpha: 0.7);
+  background: rgba($color: #fff, $alpha: 0.8);
 
   @media (min-width: 1024px) {
     width: 40%;
