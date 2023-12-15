@@ -19,8 +19,10 @@
     }, 800);
 
     function loadVideo() {
-      var x = document.getElementById('bg-video').autoplay;
-      document.getElementById('demo').innerHTML = x;
+      var x = document.getElementById('bg-video');
+      x.autoplay = true;
+      x.muted = true;
+      document.getElementById('demo').innerHTML = x.autoplay;
     }
 
     window.addEventListener('scroll', function () {
